@@ -7,6 +7,8 @@ sqlite3/3.40.1
 openssl/1.1.1t
 hiredis/1.0.0
 brotli/1.0.9
+libmariadb/3.1.13
+yaml-cpp/0.6.3
 
 [generators]
 CMakeToolchain
