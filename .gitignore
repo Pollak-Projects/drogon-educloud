@@ -1,3 +1,6 @@
+# Vcpkg
+CMakeUserPresets.json
+
 # Prerequisites
 *.d
 

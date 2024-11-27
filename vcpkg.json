@@ -1,0 +1,16 @@
+{
+  "name": "drogon-vcpkg",
+  "version": "0.0.1",
+  "dependencies": [
+    "jsoncpp",
+    "zlib",
+    "gtest",
+    "sqlite3",
+    "openssl",
+    "hiredis",
+    "brotli",
+    "jsoncpp",
+    "libmariadb",
+    "yaml-cpp"
+  ]
+}
