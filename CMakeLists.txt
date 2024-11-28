@@ -4,6 +4,8 @@ project(drogon)
 
 message(STATUS "compiler: " ${CMAKE_CXX_COMPILER_ID})
 
+set(ENV{PATH} "${DROGON_CTL_INSTALL_PATH};${VCPKG_TARGET_DEPS};$ENV{PATH}")
+
 option(BUILD_CTL "Build drogon_ctl" ON)
 option(BUILD_EXAMPLES "Build examples" ON)
 option(BUILD_ORM "Build orm" ON)
