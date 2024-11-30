@@ -15,9 +15,9 @@
         "CMAKE_BUILD_TYPE": "Debug",
         "CMAKE_TOOLCHAIN_FILE": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
         "CMAKE_POLICY_DEFAULT_CMP0091": "NEW",
-        "CMAKE_INSTALL_PREFIX": "$env{INSTALL_DIR}",
-        "DROGON_CTL_INSTALL_PATH": "$env{INSTALL_DIR}/drogon_ctl",
-        "VCPKG_TARGET_DEPS": "$env{INSTALL_DIR}/vcpkg_installed/x64-windows/bin"
+        "CMAKE_INSTALL_PREFIX": "${sourceDir}/install",
+        "DROGON_CTL_INSTALL_PATH": "${sourceDir}/build/drogon_ctl",
+        "VCPKG_TARGET_DEPS": "${sourceDir}/build/vcpkg_installed/x64-windows/bin"
       }
     }
   ],

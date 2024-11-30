@@ -1,5 +1,9 @@
 link_libraries(${PROJECT_NAME})
 
+if(CMAKE_CXX_COMPILER_ID MATCHES MSVC AND DEFINED ENV{VCPKG_ROOT})
+    set(ENV{PATH} "${DROGON_CTL_INSTALL_PATH};${VCPKG_TARGET_DEPS};$ENV{PATH}")
+    message(STATUS "vcpkg drogon_ctl paths: ${DROGON_CTL_INSTALL_PATH};${VCPKG_TARGET_DEPS}")
+endif()
 set(benchmark_sources benchmark/BenchmarkCtrl.cc benchmark/JsonCtrl.cc
                       benchmark/main.cc)
 

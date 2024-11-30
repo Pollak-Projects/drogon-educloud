@@ -5,8 +5,7 @@
       "name": "default-user",
       "inherits": "build",
       "environment": {
-        "VCPKG_ROOT": "<path to vcpkg>",
-        "INSTALL_DIR": "<path where you want drogon to be installed to>"
+        "VCPKG_ROOT": "<path to vcpkg>"
       }
     }
   ]
