@@ -1,13 +1,13 @@
 {
-    "version": 2,
-    "configurePresets": [
-      {
-        "name": "default-user",
-        "inherits": "default",
-        "environment": {
-          "VCPKG_ROOT": "C:/Users/User01/Documents/BingChilling/school13A/vcpkg",
-          "INSTALL_DIR": "C:/Users/User01/Documents/BingChilling/school13A/EduCloud/EduCloud-Backend/drogon/install"
-        }
+  "version": 2,
+  "configurePresets": [
+    {
+      "name": "default-user",
+      "inherits": "build",
+      "environment": {
+        "VCPKG_ROOT": "C:/Users/User01/Documents/BingChilling/school13A/vcpkg",
+        "INSTALL_DIR": "C:/Users/User01/Documents/BingChilling/school13A/EduCloud/EduCloud-Backend/drogon/install"
       }
-    ]
-  }
+    }
+  ]
+}
