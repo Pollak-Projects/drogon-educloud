@@ -5,7 +5,7 @@
 # This module defines PG_INCLUDE_DIRS, where to find header, etc. PG_LIBRARIES,
 # the libraries needed to use PostgreSQL. pg_FOUND, If false, do not try to use
 # PostgreSQL.
-# pg_lib - The imported target library.
+# pg_lib - The imported target library.]
 
 find_package(PostgreSQL)
 if(PostgreSQL_FOUND)
