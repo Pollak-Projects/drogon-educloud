@@ -13,11 +13,7 @@ if(PostgreSQL_FOUND)
   set(PG_INCLUDE_DIRS ${PostgreSQL_INCLUDE_DIRS})
   message(STATUS "pg inc: " ${PostgreSQL_INCLUDE_DIRS})
   add_library(pg_lib INTERFACE IMPORTED)
-  set_target_properties(pg_lib
-                        PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
-                                   "${PostgreSQL_INCLUDE_DIRS}"
-                                   INTERFACE_LINK_LIBRARIES
-                                   "${PostgreSQL_LIBRARIES}")
+  target_link_libraries(pg_lib INTERFACE PostgreSQL::PostgreSQL)
   mark_as_advanced(PG_INCLUDE_DIRS PG_LIBRARIES)
 endif(PostgreSQL_FOUND)
 include(FindPackageHandleStandardArgs)
